@@ -1,7 +1,6 @@
 
 public class Solution {
-    public int[] twoSum(int[] numbers, int target) {
-        
+    public int[] twoSum(int[] numbers, int target) {     
         if(numbers.length>=2)
         {
             HashMap<Integer,Integer> h = new HashMap<Integer,Integer>();
@@ -10,12 +9,10 @@ public class Solution {
                 {
                     int[] k = {h.get(target-numbers[i]),i};
                     return k;
-                }
-                
+                }             
                 h.put(numbers[i],i);
             }
-        }
-        
+        }       
         int[] k = {0,1};
         return k;
     }
